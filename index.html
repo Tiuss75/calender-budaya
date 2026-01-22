@@ -45,11 +45,15 @@
                 <div id="detailInfo"></div>
             </div>
         </aside>
-    </div>
-    <script type="module" main.js"></script>
-    <script type="module" app.js"></script>
-   </body>
+        </div> <script type="module" src="main.js"></script>
 
-
+    <script>
+        // Tambahan script kecil untuk menutup panel detail
+        document.getElementById("closeDetail").onclick = () => {
+            document.getElementById("detailPanel").classList.add("hidden");
+        };
+    </script>
 </body>
 </html>
+
+
