@@ -29,9 +29,10 @@ document.getElementById("btnGo").onclick = () => {
     if (inputDate) {
         const target = new Date(inputDate);
         viewDate = target;
-        refresh();
+        refresh(); // <--- INI SALAH (Ganti menjadi update())
     }
 };
+
 
 document.getElementById("btnGo").addEventListener("click", () => {
     const dateVal = document.getElementById("jumpDate").value;
