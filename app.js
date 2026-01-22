@@ -1,4 +1,4 @@
-import { CalendarUI } from './js/calendar-ui.js';
+import { CalendarUI } from './calendar-ui.js';
 
 const ui = new CalendarUI('calendarGrid', 'monthDisplay');
 let curDate = new Date();
