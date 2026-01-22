@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kalender Budaya Indonesia</title>
+    <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+   <body>
+    <div class="app-container">
+        <header>
+            <h1>Kalender Budaya Indonesia</h1>
+            <div class="calendar-controls">
+                <div class="nav-group">
+                    <button id="prevBtn">&lt; Sebelumnya</button>
+                    <h2 id="monthDisplay"></h2>
+                    <button id="nextBtn">Berikutnya &gt;</button>
+                </div>
+                <div class="search-group">
+                    <input type="date" id="jumpDate">
+                    <button id="btnGo">Cari Tanggal</button>
+                </div>
+            </div>
+        </header>
+
+        <main class="calendar-wrapper">
+            <div class="calendar-grid-header">
+                <div class="day-name sunday">Min</div>
+                <div class="day-name">Sen</div>
+                <div class="day-name">Sel</div>
+                <div class="day-name">Rab</div>
+                <div class="day-name">Kam</div>
+                <div class="day-name">Jum</div>
+                <div class="day-name">Sab</div>
+            </div>
+            <div id="calendarGrid" class="calendar-grid"></div>
+        </main>
+
+        <aside id="detailPanel" class="detail-panel hidden">
+            <div class="detail-content">
+                <button id="closeDetail" class="close-btn">&times;</button>
+                <h3 id="detailDate"></h3>
+                <hr>
+                <div id="detailInfo"></div>
+            </div>
+        </aside>
+    </div>
+    <script type="module" src="js/main.js"></script>
+</body>
+
+
+</body>
+</html>
