@@ -27,11 +27,11 @@ document.addEventListener("DOMContentLoaded", () => {
 document.getElementById("btnGo").onclick = () => {
     const inputDate = document.getElementById("jumpDate").value;
     if (inputDate) {
-        const target = new Date(inputDate);
-        viewDate = target;
-        refresh(); // <--- INI SALAH (Ganti menjadi update())
+        viewDate = new Date(inputDate);
+        update(); // Panggil fungsi update yang sudah Anda buat di atas
     }
 };
+
 
 
 document.getElementById("btnGo").addEventListener("click", () => {
