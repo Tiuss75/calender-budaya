@@ -15,16 +15,14 @@ document.addEventListener("DOMContentLoaded", () => {
     update();
 
     // Pasang fungsi tombol navigasi
-    document.getElementById("prevBtn").onclick = () => {
-        viewDate.setMonth(viewDate.getMonth() - 1);
-        update();
-    };
+    document.getElementById("btnGo").onclick = () => {
+    const inputDate = document.getElementById("jumpDate").value;
+    if (inputDate) {
+        viewDate = new Date(inputDate);
+        update(); // Panggil fungsi update yang sudah Anda buat di atas
+    }
+};
 
-    document.getElementById("nextBtn").onclick = () => {
-        viewDate.setMonth(viewDate.getMonth() + 1);
-        update();
-    };
-});
 
 document.getElementById("btnGo").onclick = () => {
     const inputDate = document.getElementById("jumpDate").value;
